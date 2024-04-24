@@ -1,3 +1,26 @@
+# Personal Portfolio Project Frontend
+
+# ReactTooltip issue
+When importing this way, I get the following runtime error:
+ Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in.
+
+Changing the import to this fixes it:
+
+import * as ReactTooltip from 'react-tooltip';
+
+# Frontend Setup 
+
+> npx create-react-app sidd-portfolio-frontend
+
+# Frontend Dependencies
+
+> npm install @sanity/client @sanity/image-url framer-motion 
+node-sass react-icons
+
+# Run React App
+
+> npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
