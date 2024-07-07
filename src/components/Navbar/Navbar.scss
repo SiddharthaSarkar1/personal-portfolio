@@ -34,6 +34,13 @@
     font-family: "Poppins", sans-serif;
     color: var(--secondary-color);
   }
+
+  .text-primary {
+    background: linear-gradient(to right, #5d52d9, #4fc5eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
 }
 
 .app__navbar-links {

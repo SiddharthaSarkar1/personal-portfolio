@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         {/* <img src={images.logo} alt="logo" /> */}
-        <h1 className="app_sid-name">
+        <h1 className="text-primary app_sid-name">
         Siddhartha
         </h1>
       </div>

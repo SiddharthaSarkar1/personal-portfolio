@@ -68,10 +68,50 @@
   }
 
   .badge-cmp {
+    .text-primary {
+      background: linear-gradient(
+        to right,
+        #5d52d9,
+        #675edd,
+        #726ae0,
+        #7c76e4,
+        #877ee8
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .text-primary:hover {
+      animation: shine 1s infinite;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+        0 0 40px rgba(255, 255, 255, 0.2);
+    }
+  
+    @keyframes shine {
+      0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+          0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+          0 0 40px rgba(255, 255, 255, 0.2);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+          0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4),
+          0 0 50px rgba(255, 255, 255, 0.2);
+      }
+      100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+          0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+          0 0 40px rgba(255, 255, 255, 0.2);
+      }
+    }
     .siddhartha {
       color: rgb(31, 2, 2);
     }
     span {
+      animation: rotate-90-bottom-ccw 3s linear 0s infinite;
       &:hover {
         animation: rotate-90-bottom-ccw 3s linear 0s 1 normal both;
 
@@ -161,6 +201,12 @@
     height: 70px;
   }
 
+  div:nth-child(4) {
+    margin-left: 3.75rem;
+    width: 100px;
+    height: 100px;
+  }
+
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
       width: 400px;
@@ -175,6 +221,10 @@
     div:nth-child(3) {
       width: 200px;
       height: 200px;
+    }
+    div:nth-child(4) {
+      width: 400px;
+      height: 400px;
     }
   }
 

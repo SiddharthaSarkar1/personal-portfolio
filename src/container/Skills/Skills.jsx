@@ -46,7 +46,7 @@ const Skills = () => {
           className="app__skills-item app__flex"
           key={skill.name}
           >
-            <div className="app__flex" style={{ backgroundColor: skill.bgColor }}>
+            <div className="app__flex glow-div" style={{ backgroundColor: skill.bgColor }}>
               <img src={urlFor(skill.icon)} alt={skill.name} />
             </div>
             <p className="p-text">{skill.name}</p>
@@ -81,16 +81,17 @@ const Skills = () => {
                 {work.name}
               </h4>
               <p className="p-text">{work.company}</p>
+              <p className="p-text">{work.desc}</p>
               </motion.div>
-
-              <ReactTooltip
+              {/* {console.log(work.name, work.company, work.desc)} */}
+              {/* <ReactTooltip
               id={work.name}
               effect="solid"
               arrowColor="#fff"
               className="skills-tooltip"
               >
               {work.desc}
-              </ReactTooltip>
+              </ReactTooltip> */}
 
             </>
 
